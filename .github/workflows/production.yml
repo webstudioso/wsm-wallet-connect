@@ -1,0 +1,22 @@
+name: WSM Toast Production
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: macos-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 18
+      - name: Install dependencies
+        run: npm i
+      - name: Run tests
+        run: npm run test
+      - name: Build
+        env:
+          MODULE_ID: 'wsm-toast'
+        run: npm run build
