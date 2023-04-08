@@ -1,6 +1,6 @@
  # Webstudio Wallet Connect Module
 
-This module adds EVM authentication capabilities to web apps built with `Webstudio`
+This module adds EVM authentication capabilities to web apps built with [Webstudio](https://webstudio.so)
 
  ![Webstudio Module Wallet Connect](https://github.com/webstudioso/wsm-wallet-connect/actions/workflows/production.yml/badge.svg)
 
