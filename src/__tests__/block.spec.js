@@ -6,7 +6,7 @@ describe("Wallet Connect block", () => {
         it("Has id, label, category and content set", async () => {
             expect(block.id).toEqual(`section-${process.env.MODULE_ID}`)
             expect(block.label).toBeTruthy()
-            expect(block.category).toEqual('Wallet Connect')
+            expect(block.category).toEqual('Login')
             expect(block.content).toBeTruthy()
         })
     })
